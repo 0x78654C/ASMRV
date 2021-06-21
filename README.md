@@ -1,5 +1,5 @@
 # ASMRV
-Simple ASRM YouTube browser with timer
+Simple ASMR YouTube browser with timer
 
 ![alt text](https://github.com/0x78654C/ASMRV/blob/master/data/logo.jpg?raw=true)
 
