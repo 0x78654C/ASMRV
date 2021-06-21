@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
         activity=this;
         _progDailog = ProgressDialog.show(activity, "Loading","Please wait...", true);
         _progDailog.setCancelable(false);
-
         webView = (WebView) findViewById(R.id.webViewYT);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setLoadWithOverviewMode(true);
@@ -103,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                         editorPref = myPref.edit();
                         editorPref.putString("time_str", _timer_interval); //we save the interval in shared pref for future use
                         editorPref.apply();
-                        Toast.makeText(MainActivity.this, "Timer is set for: " + _timer_interval + " minutes and started!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Timer is started  and set for: " + _timer_interval + " minutes!", Toast.LENGTH_LONG).show();
                         _onStartTimer(inter);
                         controller = 1;
                     }else{
@@ -178,4 +177,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     //--------------------------
+
+    //hiding virtual menu buttons and status bar
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged (hasFocus);
+            if (hasFocus) {
+                getWindow().getDecorView().setSystemUiVisibility(
+                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                                | View.SYSTEM_UI_FLAG_FULLSCREEN
+                                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
+    }
 }
