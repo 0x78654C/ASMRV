@@ -7,7 +7,7 @@ This is a simple Android browser with a timer that starts YouTube with searched 
 The goal of the app is to have a timer that closes when is over and locks screen. So if you fall asleep you must not worry about it:D.
 
 **Features**:
-  - Timer set in minuts.
+  - Timer set in minutes. The count down is displayed on START button.
   - Stop timer at any time.
   - Screen rotation with menu bar and notification area remove
   - Screen lock when app closes
