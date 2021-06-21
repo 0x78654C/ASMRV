@@ -17,4 +17,4 @@ The goal of the app is to have a timer that closes when is over and locks screen
   
 ![alt text](https://github.com/0x78654C/ASMRV/blob/master/data/ing.bmp?raw=true)
 
-![alt text](https://github.com/0x78654C/ASMRV/blob/master/data/img.jpg?raw=true)
+![alt text](https://github.com/0x78654C/ASMRV/blob/master/data/msg.jpg?raw=true)
